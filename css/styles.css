@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cards {
+    margin: 10px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.cards__item {
+    width: 33.3%;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ababab;
+}
+
+.cards__item--two {
+    background-color: aquamarine;
+    position: fixed;
+    top: 0px;
+    right: 0;
+}
+
+.list {
+    background-color: #345678;
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list2__item {
+    width: 100%;
+    margin: 5px;
+    border: 1px solid #000000;
+}
+
+@media (min-width: 768px) {
+    .list2__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .list2__item {
+        width: 20%;
+        margin: 5px 0;
+        border: 0;
+    }
+    .list2__item:hover {
+        background-color: #333;
+    }
+}
